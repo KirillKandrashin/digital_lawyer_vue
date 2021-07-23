@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Digital Lawyer</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://unpkg.com/vue"></script>
+    <!-- template for the modal component -->
+    <script type="text/x-template" id="modal-template">
+        <transition name="modal">
+            <div class="window">
+                <button class="x2" @click="$emit('close')">
+                    &#9746;
+                </button>
+                <div class="text8">Авторизация</div>
+                <div class="field1">
+                    <iframe width="300" height="343" frameborder="0px" src="window.html"></iframe>
+                </div>
+            </div>
+        </transition>
+    </script>
+</head>
+<body>
+    <div class="top">
+        <div class="rectangle70">
+        </div>
+        <div class="rectangle83">
+        </div>
+        <div class="d-lawyer">
+            <a href="main.html"><img src="main_pictures/cover.jpg" width="240" height="40"></a>
+        </div>
+        <div class="main-menu">
+            <div class="menu">
+                <a href="tarifs.html"><div class="tarifs">Тарифы</div></a>
+                <div class="salers-brands">Продавцы и бренды</div>
+                <div class="about">О сервисе</div>
+            </div>
+            <div class="rectangle103"></div>
+
+            <!-- app -->
+            <div id="app">
+                <button class="login" @click="showModal = true">
+                    <div class="entrance">Вход</div>
+                    <div class="x">
+                        <div class="line9"></div>
+                        <div class="line10"></div>
+                    </div>
+                </button>
+                <!-- use the modal component, pass in the prop -->
+                <modal v-if="showModal" @close="showModal = false">
+                </modal>
+            </div>
+            <script src="window.js"></script>
+          </div>
+      </div>
+      <div class="dl">
+          <img src="main_pictures/DL.jpg">
+      </div>
+      <div class="text1">DIGITAL LAWYER — сервис для решения правовых проблем между потребителями и онлайн-продавцами</div>
+      <div class="client">
+          <img src="main_pictures/client.jpg">
+      </div>
+      <div class="text2">Регистрация покупателя</div>
+      <div class="text3">Для граждан, которые желают решить вопрос возврата товара самостоятельно, без привлечения услуг профессионального юриста.</div>
+      <div class="free">
+          <img src="main_pictures/free.jpg">
+      </div>
+      <div class="text4">Демо-доступ</div>
+      <div class="text5">Для авторизованных покупателей.</div>
+      <div class="merchant">
+          <img src="main_pictures/merchant.jpg">
+      </div>
+      <div class="text6">Новый продавец</div>
+      <div class="text7">Для предпринимателей, не имеющих в штате юриста, но желающих урегулировать претензии потребителей в рамках закона.</div>
+      <div class="footer">
+          <div class="dl_footer">
+              <img src="main_pictures/footer.jpg">
+          </div>
+      </div>
+  </body>
+</html>

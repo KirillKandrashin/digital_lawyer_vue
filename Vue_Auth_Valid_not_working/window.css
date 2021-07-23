@@ -1,0 +1,71 @@
+.app2 {
+  position: absolute;
+  width: 300px;
+  height: 373px;
+  left: 71.61%;
+  top: 20px;
+  background: #007FEF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.input1 {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  /* white */
+  background: #FFFFFF;
+
+  /* 666 gray */
+  border: 1px solid #666666;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.text_email{
+
+  position: absolute;
+  height: 24px;
+  left: 10px;
+  right: 4px;
+  top: -29px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+
+  /* identical to box height, or 200% */
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 0.01em;
+
+  /* 000 */
+  color: #000000;
+
+  opacity: 0.6;
+}
+.button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 20px;
+
+  position: absolute;
+  width: 250px;
+  height: 40px;
+  left: 25px;
+  top: 280px;
+
+  /* disabled gray */
+  background: #CCCCCC;
+  border-radius: 4px;
+}
+

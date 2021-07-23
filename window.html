@@ -1,0 +1,41 @@
+<html>
+<head>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+<form id="app2" @submit="checkForm" action="https://vuejs.org/" method="post">
+
+    <p v-if="errors.length">
+        <b>Please correct the following error(s):</b>
+    <ul>
+        <li v-for="error in errors">{{ error }}</li>
+    </ul>
+    </p>
+
+    <p>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" v-model="name">
+    </p>
+
+    <p>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" v-model="age" min="0">
+    </p>
+
+    <p>
+        <label for="movie">Favorite Movie</label>
+        <select name="movie" id="movie" v-model="movie">
+            <option>Star Wars</option>
+            <option>Vanilla Sky</option>
+            <option>Atomic Blonde</option>
+        </select>
+    </p>
+
+    <p>
+        <input type="submit" value="Submit">
+    </p>
+
+</form>
+<script src="window_valid.js"></script>
+</body>
+</html>
