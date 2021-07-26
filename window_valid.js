@@ -2,16 +2,15 @@ const app2 = new Vue({
     el:'#app2',
     data:{
         errors:[],
-        name:null,
-        age:null,
-        movie:null
+        mail:null,
+        password:null
     },
     methods:{
         checkForm:function(e) {
-            if(this.name && this.age) return true;
+            if(this.mail && this.password) return true;
             this.errors = [];
-            if(!this.name) this.errors.push("Name required.");
-            if(!this.age) this.errors.push("Age required.");
+            if(!this.mail) this.errors.push("Mail required.");
+            if(!this.password) this.errors.push("Password required.");
             e.preventDefault();
         }
     }

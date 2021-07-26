@@ -2,3 +2,24 @@
     max-width: 300px;
     max-height: 343px;
 }
+.resetting{
+    position: absolute;
+    width: 103px;
+    height: 18px;
+    left: 100px;
+    top: 200px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+
+    /* identical to box height, or 112% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* top menu */
+    color: #006ECF;
+}
